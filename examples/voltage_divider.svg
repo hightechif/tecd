@@ -30,7 +30,7 @@
   <text x="-30.0" y="-15.0" text-anchor="middle" font-size="12" dominant-baseline="middle" transform="rotate(-0.0, -30.0, -15.0)">GND</text>
   <text x="30.0" y="0.0" text-anchor="middle" font-size="10" fill="gray" dominant-baseline="middle" transform="rotate(-0.0, 30.0, 0.0)"></text>
 </g>
-<path d="M 100.0 80.0 L 100.0 200.0 L 100.0 200.0" stroke="blue" stroke-width="1" fill="none"/>
-<path d="M 100.0 240.0 L 100.0 320.0 L 100.0 320.0" stroke="blue" stroke-width="1" fill="none"/>
-<path d="M 100.0 360.0 L 100.0 510 L 100 510" stroke="blue" stroke-width="1" fill="none"/>
+<path d="M 100.0 80.0 L 100.0 140.0 L 100.0 140.0 L 100.0 200.0" stroke="blue" stroke-width="1" fill="none"/>
+<path d="M 100.0 240.0 L 100.0 280.0 L 100.0 280.0 L 100.0 320.0" stroke="blue" stroke-width="1" fill="none"/>
+<path d="M 100.0 360.0 L 100.0 435.0 L 100 435.0 L 100 510" stroke="blue" stroke-width="1" fill="none"/>
 </svg>

@@ -41,7 +41,7 @@ def watch_mode(source_file, output_file, layout_override=None):
             try:
                 mtime = os.path.getmtime(source_file)
             except FileNotFoundError:
-                print("File not found.")
+                print(f"File not found: {os.path.abspath(source_file)}")
                 time.sleep(1)
                 continue
 
