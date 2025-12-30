@@ -136,6 +136,20 @@ def test_invalid_syntax():
     with pytest.raises(Exception):
         compile_source(invalid_syn)
 
+def test_transistors():
+    trans = """
+    @circuit
+    VDC Vcc (v=5V)
+    NPN Q1 (model=2N3904)
+    NMOS M1 (model=IRF540)
+    NOT Inv1
+    AND And1
+    Q1.B -> Q1.C
+    @end
+    """
+    graph = compile_source(trans)
+    assert {"Vcc", "Q1", "M1", "Inv1", "And1"}.issubset(graph.components.keys())
+
 def test_unknown_component_type():
     unknown_type = """
     @circuit

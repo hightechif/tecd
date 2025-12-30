@@ -42,6 +42,12 @@ class Lexer:
                 pos += 1
                 continue
             
+            # Comments
+            if self.source[pos] == '#':
+                while pos < len(self.source) and self.source[pos] != '\n':
+                    pos += 1
+                continue
+            
             # Newline
             if self.source[pos] == '\n':
                 self.tokens.append(Token(TokenType.NEWLINE, '\n', self.current_line, self.current_col))
@@ -69,7 +75,9 @@ class Lexer:
                     if val == '@circuit': token_type = TokenType.KW_CIRCUIT
                     elif val == '@end': token_type = TokenType.KW_END
                     elif val == '@options': token_type = TokenType.KW_OPTIONS
-                    elif val in ['VDC', 'RES', 'CAP', 'IND', 'GND', 'DIODE', 'LED', 'SWITCH', 'VAC', 'IDC']: token_type = TokenType.TYPE
+                    elif val in ['VDC', 'RES', 'CAP', 'IND', 'GND', 'DIODE', 'LED', 'SWITCH', 'VAC', 'IDC',
+                                 'NPN', 'PNP', 'NMOS', 'PMOS', 'AND', 'OR', 'NOT', 'NAND']: 
+                        token_type = TokenType.TYPE
                     # Fallback ID for values or pin names
                     
                     self.tokens.append(Token(token_type, val, self.current_line, self.current_col))

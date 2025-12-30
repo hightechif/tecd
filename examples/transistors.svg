@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="550" height="600" viewBox="0 0 550 600">
+<style> text { font-family: sans-serif; fill: black; } path, line, rect { stroke: black; } </style>
+<rect width="100%" height="100%" fill="white"/>
+<g transform="translate(100, 100) rotate(0.0)">
+  <g class="symbol">
+        <line x1="-5" y1="-10" x2="-5" y2="10" stroke="currentColor" stroke-width="2"/>
+        <line x1="5" y1="-5" x2="5" y2="5" stroke="currentColor" stroke-width="4"/>
+        <line x1="-20" y1="0" x2="-5" y2="0" stroke="currentColor" stroke-width="2"/>
+        <line x1="5" y1="0" x2="20" y2="0" stroke="currentColor" stroke-width="2"/>
+        <text x="-10" y="-15" font-size="10" fill="currentColor">+</text>
+    </g>
+  <text x="0.0" y="-30.0" text-anchor="middle" font-size="12" dominant-baseline="middle" transform="rotate(-0.0, 0.0, -30.0)">Vcc</text>
+  <text x="0.0" y="30.0" text-anchor="middle" font-size="10" fill="gray" dominant-baseline="middle" transform="rotate(-0.0, 0.0, 30.0)">5V</text>
+</g>
+<g transform="translate(250, 100) rotate(0.0)">
+  <g class="symbol">
+        <path d="M -10 -15 V 15 A 15 15 0 0 0 10 15 V -15 A 15 15 0 0 0 -10 -15 Z" fill="none" stroke="currentColor" stroke-width="2"/>
+        <line x1="-10" y1="-15" x2="5" y2="-15" stroke="currentColor" stroke-width="2"/> 
+        <line x1="-10" y1="15" x2="5" y2="15" stroke="currentColor" stroke-width="2"/>
+        <path d="M 5 -15 A 15 15 0 0 1 5 15" fill="none" stroke="currentColor" stroke-width="2"/>
+        <line x1="-10" y1="-15" x2="-10" y2="15" stroke="currentColor" stroke-width="2"/>
+        <line x1="20" y1="0" x2="30" y2="0" stroke="currentColor" stroke-width="2"/>
+        <line x1="-20" y1="-5" x2="-10" y2="-5" stroke="currentColor" stroke-width="2"/>
+        <line x1="-20" y1="5" x2="-10" y2="5" stroke="currentColor" stroke-width="2"/>
+    </g>
+  <text x="0.0" y="-30.0" text-anchor="middle" font-size="12" dominant-baseline="middle" transform="rotate(-0.0, 0.0, -30.0)">And1</text>
+  <text x="0.0" y="30.0" text-anchor="middle" font-size="10" fill="gray" dominant-baseline="middle" transform="rotate(-0.0, 0.0, 30.0)"></text>
+</g>
+<g transform="translate(250, 220) rotate(0.0)">
+  <g class="symbol">
+        <circle cx="0" cy="0" r="20" fill="none" stroke="currentColor" stroke-width="2"/>
+        <line x1="-10" y1="-12" x2="-10" y2="12" stroke="currentColor" stroke-width="2"/>
+        <line x1="-15" y1="-12" x2="-15" y2="12" stroke="currentColor" stroke-width="2"/>
+        <line x1="-20" y1="0" x2="-15" y2="0" stroke="currentColor" stroke-width="2"/>
+        <line x1="-10" y1="-10" x2="0" y2="-10" stroke="currentColor" stroke-width="2"/>
+        <line x1="0" y1="-10" x2="0" y2="-15" stroke="currentColor" stroke-width="2"/>
+        <line x1="0" y1="-15" x2="20" y2="-15" stroke="currentColor" stroke-width="2"/>
+        <line x1="-10" y1="10" x2="0" y2="10" stroke="currentColor" stroke-width="2"/>
+        <line x1="0" y1="10" x2="0" y2="15" stroke="currentColor" stroke-width="2"/>
+        <line x1="0" y1="15" x2="20" y2="15" stroke="currentColor" stroke-width="2"/>
+        <line x1="-10" y1="0" x2="0" y2="0" stroke="currentColor" stroke-width="2"/>
+        <polygon points="-10,0 -4,-3 -4,3" fill="currentColor"/>
+    </g>
+  <text x="0.0" y="-30.0" text-anchor="middle" font-size="12" dominant-baseline="middle" transform="rotate(-0.0, 0.0, -30.0)">M1</text>
+  <text x="0.0" y="30.0" text-anchor="middle" font-size="10" fill="gray" dominant-baseline="middle" transform="rotate(-0.0, 0.0, 30.0)">IRF540</text>
+</g>
+<g transform="translate(250, 340) rotate(0.0)">
+  <g class="symbol">
+        <circle cx="0" cy="0" r="20" fill="none" stroke="currentColor" stroke-width="2"/>
+        <line x1="-10" y1="-12" x2="-10" y2="12" stroke="currentColor" stroke-width="2"/>
+        <line x1="-20" y1="0" x2="-10" y2="0" stroke="currentColor" stroke-width="2"/>
+        <line x1="-10" y1="-7" x2="10" y2="-15" stroke="currentColor" stroke-width="2"/>
+        <line x1="-10" y1="7" x2="10" y2="15" stroke="currentColor" stroke-width="2"/>
+        <line x1="10" y1="-15" x2="20" y2="-15" stroke="currentColor" stroke-width="2"/>
+        <line x1="10" y1="15" x2="20" y2="15" stroke="currentColor" stroke-width="2"/>
+        <polygon points="10,15 6,8 3,11" fill="currentColor"/>
+    </g>
+  <text x="0.0" y="-30.0" text-anchor="middle" font-size="12" dominant-baseline="middle" transform="rotate(-0.0, 0.0, -30.0)">Q1</text>
+  <text x="0.0" y="30.0" text-anchor="middle" font-size="10" fill="gray" dominant-baseline="middle" transform="rotate(-0.0, 0.0, 30.0)">2N3904</text>
+</g>
+<g transform="translate(400, 100) rotate(0.0)">
+  <g class="symbol">
+        <polygon points="-10,-10 -10,10 10,0" fill="none" stroke="currentColor" stroke-width="2"/>
+        <circle cx="13" cy="0" r="3" fill="none" stroke="currentColor" stroke-width="2"/>
+        <line x1="-20" y1="0" x2="-10" y2="0" stroke="currentColor" stroke-width="2"/>
+        <line x1="16" y1="0" x2="26" y2="0" stroke="currentColor" stroke-width="2"/>
+    </g>
+  <text x="0.0" y="-30.0" text-anchor="middle" font-size="12" dominant-baseline="middle" transform="rotate(-0.0, 0.0, -30.0)">Inv1</text>
+  <text x="0.0" y="30.0" text-anchor="middle" font-size="10" fill="gray" dominant-baseline="middle" transform="rotate(-0.0, 0.0, 30.0)"></text>
+</g>
+<g transform="translate(400, 220) rotate(0.0)">
+  <g class="symbol">
+        <path d="M -15 -15 Q 5 -15 15 0 Q 5 15 -15 15 Q -5 0 -15 -15" fill="none" stroke="currentColor" stroke-width="2"/>
+        <line x1="15" y1="0" x2="25" y2="0" stroke="currentColor" stroke-width="2"/>
+        <line x1="-25" y1="-5" x2="-10" y2="-5" stroke="currentColor" stroke-width="2"/>
+        <line x1="-25" y1="5" x2="-10" y2="5" stroke="currentColor" stroke-width="2"/>
+    </g>
+  <text x="0.0" y="-30.0" text-anchor="middle" font-size="12" dominant-baseline="middle" transform="rotate(-0.0, 0.0, -30.0)">Or1</text>
+  <text x="0.0" y="30.0" text-anchor="middle" font-size="10" fill="gray" dominant-baseline="middle" transform="rotate(-0.0, 0.0, 30.0)"></text>
+</g>
+<g transform="translate(400, 340) rotate(0.0)">
+  <g class="symbol">
+        <path d="M -10 -15 V 15" stroke="currentColor" stroke-width="2"/>
+        <path d="M -10 -15 H 5 A 15 15 0 0 1 5 15 H -10" fill="none" stroke="currentColor" stroke-width="2"/>
+        <circle cx="23" cy="0" r="3" fill="none" stroke="currentColor" stroke-width="2"/>
+        <line x1="26" y1="0" x2="36" y2="0" stroke="currentColor" stroke-width="2"/>
+        <line x1="-20" y1="-5" x2="-10" y2="-5" stroke="currentColor" stroke-width="2"/>
+        <line x1="-20" y1="5" x2="-10" y2="5" stroke="currentColor" stroke-width="2"/>
+    </g>
+  <text x="0.0" y="-30.0" text-anchor="middle" font-size="12" dominant-baseline="middle" transform="rotate(-0.0, 0.0, -30.0)">Nand1</text>
+  <text x="0.0" y="30.0" text-anchor="middle" font-size="10" fill="gray" dominant-baseline="middle" transform="rotate(-0.0, 0.0, 30.0)"></text>
+</g>
+<g transform="translate(400, 460) rotate(0.0)">
+  <g class="symbol">
+        <line x1="-5" y1="-10" x2="-5" y2="10" stroke="currentColor" stroke-width="2"/>
+        <line x1="5" y1="-5" x2="5" y2="5" stroke="currentColor" stroke-width="4"/>
+        <line x1="-20" y1="0" x2="-5" y2="0" stroke="currentColor" stroke-width="2"/>
+        <line x1="5" y1="0" x2="20" y2="0" stroke="currentColor" stroke-width="2"/>
+        <text x="-10" y="-15" font-size="10" fill="currentColor">+</text>
+    </g>
+  <text x="0.0" y="-30.0" text-anchor="middle" font-size="12" dominant-baseline="middle" transform="rotate(-0.0, 0.0, -30.0)">Vin</text>
+  <text x="0.0" y="30.0" text-anchor="middle" font-size="10" fill="gray" dominant-baseline="middle" transform="rotate(-0.0, 0.0, 30.0)">3.3V</text>
+</g>
+<g transform="translate(400, 640) rotate(0.0)">
+  <g class="symbol">
+        <line x1="-15" y1="0" x2="15" y2="0" stroke="currentColor" stroke-width="2"/>
+        <line x1="0" y1="-10" x2="0" y2="0" stroke="currentColor" stroke-width="2"/>
+    </g>
+  <text x="-30.0" y="-15.0" text-anchor="middle" font-size="12" dominant-baseline="middle" transform="rotate(-0.0, -30.0, -15.0)">GND</text>
+  <text x="30.0" y="0.0" text-anchor="middle" font-size="10" fill="gray" dominant-baseline="middle" transform="rotate(-0.0, 30.0, 0.0)"></text>
+</g>
+<path d="M 380 460 L 230 460 L 230 340" stroke="blue" stroke-width="1" fill="none"/>
+<path d="M 230 340 L 380 340 L 380 100" stroke="blue" stroke-width="1" fill="none"/>
+<path d="M 380 460 L 230 460 L 230 220" stroke="blue" stroke-width="1" fill="none"/>
+<path d="M 270 205 L 270 205 L 270 325" stroke="blue" stroke-width="1" fill="none"/>
+<path d="M 270 325 L 80 325 L 80 100" stroke="blue" stroke-width="1" fill="none"/>
+<path d="M 80 100 L 230 100 L 230 105" stroke="blue" stroke-width="1" fill="none"/>
+<path d="M 270 235 L 270 235 L 270 355" stroke="blue" stroke-width="1" fill="none"/>
+<path d="M 270 355 L 400 355 L 400 630" stroke="blue" stroke-width="1" fill="none"/>
+<path d="M 400 630 L 380 630 L 380 345" stroke="blue" stroke-width="1" fill="none"/>
+<path d="M 426 100 L 230 100 L 230 95" stroke="blue" stroke-width="1" fill="none"/>
+<path d="M 280 100 L 375 100 L 375 215" stroke="blue" stroke-width="1" fill="none"/>
+<path d="M 425 220 L 380 220 L 380 335" stroke="blue" stroke-width="1" fill="none"/>
+</svg>

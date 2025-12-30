@@ -19,6 +19,11 @@ class Parser:
             self.pos += 1
         return token
 
+    def peek(self) -> Token:
+        if self.pos + 1 < len(self.tokens):
+            return self.tokens[self.pos + 1]
+        return self.tokens[-1]
+
     def match(self, token_type: str) -> bool:
         if self.current().type == token_type:
             self.advance()
@@ -47,7 +52,12 @@ class Parser:
         if token.type == TokenType.KW_OPTIONS:
             self.parse_options()
         elif token.type == TokenType.TYPE:
-            self.parse_component()
+            # Ambiguity check for GND (can be TYPE or PinRef)
+            # If GND is followed by ARROW or DOT, it's a connection chain
+            if token.value == 'GND' and self.peek().type in [TokenType.ARROW, TokenType.DOT]:
+                self.parse_connection_chain()
+            else:
+                self.parse_component()
         elif token.type == TokenType.ID:
             self.parse_connection_chain()
         elif token.type == TokenType.NEWLINE:

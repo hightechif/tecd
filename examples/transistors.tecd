@@ -1,0 +1,37 @@
+@circuit
+@options
+  layout = horizontal
+@end
+
+# Inputs
+VDC Vcc (v=5V)
+VDC Vin (v=3.3V)
+
+# Transistors
+NPN Q1 (model=2N3904)
+NMOS M1 (model=IRF540)
+
+# Logic
+NOT Inv1
+AND And1
+OR Or1
+NAND Nand1
+
+# Connections for Transistors
+Vin.+ -> Q1.B
+Q1.C -> Vcc.+
+Q1.E -> GND
+
+Vin.left -> M1.G
+M1.D -> Vcc.+
+M1.S -> GND
+
+# Logic Chain
+Vin.+ -> Inv1.in
+Inv1.out -> And1.in1
+Vcc.+ -> And1.in2
+And1.out -> Or1.in1
+Or1.out -> Nand1.in1
+GND -> Nand1.in2
+
+@end
