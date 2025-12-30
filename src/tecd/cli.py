@@ -1,6 +1,6 @@
-from tecd import compile
-from tecd.layout import compute_layout
-from tecd.renderer import render_svg
+from . import compile
+from .layout import compute_layout
+from .renderer import render_svg
 import sys
 import os
 import time
@@ -54,7 +54,7 @@ def watch_mode(source_file, output_file, layout_override=None):
     except KeyboardInterrupt:
         print("\nStopping watch mode.")
 
-if __name__ == "__main__":
+def main():
     parser = argparse.ArgumentParser(description="TECD: Text to Electrical Circuit Diagram Visualizer")
     parser.add_argument("input", help="Input .tecd file")
     parser.add_argument("output", nargs="?", help="Output .svg file")
@@ -77,3 +77,6 @@ if __name__ == "__main__":
         watch_mode(source, output, args.layout)
     else:
         visualize(source, output, args.layout)
+
+if __name__ == "__main__":
+    main()

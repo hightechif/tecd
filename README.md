@@ -10,9 +10,22 @@ uv sync
 
 ## Usage
 
+TECD is a command-line tool.
+
+### Visualizing a Circuit
+
 ```bash
-uv run verify.py
+# Basic usage
+uv run tecd examples/rectifier.tecd output.svg
+
+# Override layout orientation
+uv run tecd examples/wheatstone_bridge.tecd output.svg --layout vertical
+
+# Watch mode (automatically re-render on save)
+uv run tecd examples/transistors.tecd --watch
 ```
+
+The output will be an SVG file that you can view in any web browser.
 
 ---
 

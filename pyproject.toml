@@ -17,7 +17,10 @@ packages = ["src/tecd"]
 pythonpath = ["src"]
 testpaths = ["tests"]
 
+[project.scripts]
+tecd = "tecd.cli:main"
+
 [dependency-groups]
 dev = [
-    "pytest>=8.4.2",
+    "pytest>=8.3.4",
 ]
