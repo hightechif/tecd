@@ -1,6 +1,6 @@
 @circuit
 @options
-  layout = automatic
+  layout = horizontal
 @end
 
 VDC Vs (v=10V)

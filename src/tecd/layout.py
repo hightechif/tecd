@@ -130,7 +130,7 @@ class LayoutEngine:
                     y = START_Y + rank * V_SPACING # Flow down
                     rotation = 90.0
                     if comp.type_name == 'GND':
-                         y += 60 # Vertical needs offset? Maybe not, usually straight down.
+                         y += 60 
                          rotation = 0.0
 
                 placed_components.append(PlacedComponent(
@@ -296,7 +296,7 @@ class LayoutEngine:
                      x2, y2 = positions[n2]
                      
                      angle = math.degrees(math.atan2(y2 - y1, x2 - x1))
-                     # Snap rotation to nearest 45 degrees
+                     # angle is the visual angle (CW in SVG coords).
                      rotations[node] = round(angle / 45) * 45
             
         placed = []
