@@ -112,10 +112,14 @@ class SVGRenderer:
                          lines.append(f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="blue" stroke-width="1" />')
                     else:
                         d = ""
-                        if style == 'HV': # Horizontal then Vertical
-                            d = f"M {x1} {y1} L {x2} {y1} L {x2} {y2}"
-                        elif style == 'VH': # Vertical then Horizontal
-                            d = f"M {x1} {y1} L {x1} {y2} L {x2} {y2}"
+                        if style == 'HV': # Horizontal Layout (Horizontal -> Vertical -> Horizontal)
+                            # Use Z-routing to stay in channels
+                            mid_x = (x1 + x2) / 2
+                            d = f"M {x1} {y1} L {mid_x} {y1} L {mid_x} {y2} L {x2} {y2}"
+                        elif style == 'VH': # Vertical Layout (Vertical -> Horizontal -> Vertical)
+                            # Use Z-routing
+                            mid_y = (y1 + y2) / 2
+                            d = f"M {x1} {y1} L {x1} {mid_y} L {x2} {mid_y} L {x2} {y2}"
                         
                         if d:
                             lines.append(f'<path d="{d}" stroke="blue" stroke-width="1" fill="none"/>')

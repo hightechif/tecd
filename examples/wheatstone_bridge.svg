@@ -45,13 +45,13 @@
   <text x="0.0" y="-30.0" text-anchor="middle" font-size="12" dominant-baseline="middle" transform="rotate(-0.0, 0.0, -30.0)">Rg</text>
   <text x="0.0" y="30.0" text-anchor="middle" font-size="10" fill="gray" dominant-baseline="middle" transform="rotate(-0.0, 0.0, 30.0)">50R</text>
 </g>
-<path d="M 80 100 L 230 100 L 230 100" stroke="blue" stroke-width="1" fill="none"/>
-<path d="M 230 100 L 230 100 L 230 340" stroke="blue" stroke-width="1" fill="none"/>
-<path d="M 270 100 L 230 100 L 230 220" stroke="blue" stroke-width="1" fill="none"/>
-<path d="M 230 220 L 380 220 L 380 100" stroke="blue" stroke-width="1" fill="none"/>
-<path d="M 270 460 L 270 460 L 270 220" stroke="blue" stroke-width="1" fill="none"/>
-<path d="M 270 220 L 120 220 L 120 100" stroke="blue" stroke-width="1" fill="none"/>
-<path d="M 120 100 L 250 100 L 250 630" stroke="blue" stroke-width="1" fill="none"/>
-<path d="M 420 100 L 270 100 L 270 340" stroke="blue" stroke-width="1" fill="none"/>
-<path d="M 270 340 L 230 340 L 230 460" stroke="blue" stroke-width="1" fill="none"/>
+<path d="M 80 100 L 155.0 100 L 155.0 100 L 230 100" stroke="blue" stroke-width="1" fill="none"/>
+<path d="M 230 100 L 230.0 100 L 230.0 340 L 230 340" stroke="blue" stroke-width="1" fill="none"/>
+<path d="M 270 100 L 250.0 100 L 250.0 220 L 230 220" stroke="blue" stroke-width="1" fill="none"/>
+<path d="M 230 220 L 305.0 220 L 305.0 100 L 380 100" stroke="blue" stroke-width="1" fill="none"/>
+<path d="M 270 460 L 270.0 460 L 270.0 220 L 270 220" stroke="blue" stroke-width="1" fill="none"/>
+<path d="M 270 220 L 195.0 220 L 195.0 100 L 120 100" stroke="blue" stroke-width="1" fill="none"/>
+<path d="M 120 100 L 185.0 100 L 185.0 630 L 250 630" stroke="blue" stroke-width="1" fill="none"/>
+<path d="M 420 100 L 345.0 100 L 345.0 340 L 270 340" stroke="blue" stroke-width="1" fill="none"/>
+<path d="M 270 340 L 250.0 340 L 250.0 460 L 230 460" stroke="blue" stroke-width="1" fill="none"/>
 </svg>

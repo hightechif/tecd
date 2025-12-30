@@ -93,10 +93,43 @@ class LayoutEngine:
                              visited.add(neighbor)
                              queue.append(neighbor)
 
-        # 3. Create Coordinates
+        # 3. Create Coordinates Optimizations (Barycentric Heuristic)
         layers: Dict[int, List[str]] = defaultdict(list)
         for name, rank in ranks.items():
             layers[rank].append(name)
+            
+        # Initial Sort: Alphanumeric
+        for rank in layers:
+            layers[rank].sort()
+            
+        # Crossing Minimization Logic
+        max_rank = max(layers.keys()) if layers else 0
+        min_rank = min(layers.keys()) if layers else 0
+        
+        # Helper to get avg pos of neighbors in target rank
+        def get_avg_pos(node, target_rank, current_order):
+            neighbors = adj[node]
+            relevant = [n for n in neighbors if ranks.get(n) == target_rank and n in current_order]
+            if not relevant:
+                return 0 # Or current index?
+            
+            total = sum(current_order.index(n) for n in relevant)
+            return total / len(relevant)
+
+        # Iterations
+        for _ in range(5):
+             # Forward Sweep (rank i depends on i-1)
+             for r in range(min_rank + 1, max_rank + 1):
+                 prev_layer = layers[r-1]
+                 curr_layer = layers[r]
+                 # Sort current layer based on avg position of neighbors in prev layer
+                 curr_layer.sort(key=lambda n: get_avg_pos(n, r-1, prev_layer))
+                 
+             # Backward Sweep (rank i depends on i+1)
+             for r in range(max_rank - 1, min_rank - 1, -1):
+                 next_layer = layers[r+1]
+                 curr_layer = layers[r]
+                 curr_layer.sort(key=lambda n: get_avg_pos(n, r+1, next_layer))
 
         placed_components = []
         H_SPACING = 150
