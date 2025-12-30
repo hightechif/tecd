@@ -1,0 +1,23 @@
+@circuit
+@options
+  layout = horizontal
+@end
+
+VAC AC_In (v=24V)
+DIODE D1 (model=1N4007)
+DIODE D2 (model=1N4007)
+DIODE D3 (model=1N4007)
+DIODE D4 (model=1N4007)
+RES Load (v=1k)
+CAP CFilter (v=100uF)
+
+AC_In.+ -> D1 -> Top
+AC_In.+ -> D2 -> Bottom
+AC_In.- -> D3 -> Top
+AC_In.- -> D4 -> Bottom
+
+Top -> Load -> Bottom
+Top -> CFilter -> Bottom
+
+Bottom -> GND
+@end

@@ -1,0 +1,25 @@
+@circuit
+@options
+  layout = automatic
+@end
+
+VDC Vs (v=10V)
+RES R1 (v=1k)
+RES R2 (v=1k)
+RES R3 (v=1k)
+RES R4 (v=1k)
+RES Rg (v=50R)
+
+Vs.+ -> Top
+Vs.- -> GND
+
+Top -> R1 -> Left
+Top -> R3 -> Right
+
+Left -> R2 -> Bottom
+Right -> R4 -> Bottom
+
+Left -> Rg -> Right
+
+Bottom -> GND
+@end

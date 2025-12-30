@@ -1,0 +1,14 @@
+@circuit
+@options
+  layout = horizontal
+@end
+
+VAC V1 (ac=220V)
+SWITCH S1 (type=spst)
+DIODE D1 (model=1N4007)
+LED L1 (color=red)
+RES R1 (value=330R)
+IDC I1 (current=1A)
+
+V1 -> S1 -> D1 -> L1 -> R1 -> I1 -> GND
+@end

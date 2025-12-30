@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+<style> text { font-family: sans-serif; fill: black; } path, line, rect { stroke: black; } </style>
+<rect width="100%" height="100%" fill="white"/>
+<g transform="translate(80, 320) rotate(-90)">
+  <g class="symbol">
+        <line x1="-5" y1="-10" x2="-5" y2="10" stroke="currentColor" stroke-width="2"/>
+        <line x1="5" y1="-5" x2="5" y2="5" stroke="currentColor" stroke-width="4"/>
+        <line x1="-20" y1="0" x2="-5" y2="0" stroke="currentColor" stroke-width="2"/>
+        <line x1="5" y1="0" x2="20" y2="0" stroke="currentColor" stroke-width="2"/>
+        <text x="-10" y="-15" font-size="10" fill="currentColor">+</text>
+    </g>
+  <text x="0" y="-25" text-anchor="middle" font-size="12" transform="rotate(90, 0, -25)">Vs</text>
+  <text x="0" y="30" text-anchor="middle" font-size="10" fill="gray" transform="rotate(90, 0, 30)">10V</text>
+</g>
+<g transform="translate(400, 560) rotate(-45)">
+  <g class="symbol"><rect x="-20" y="-8" width="40" height="16" fill="none" stroke="currentColor" stroke-width="2"/></g>
+  <text x="0" y="-25" text-anchor="middle" font-size="12" transform="rotate(45, 0, -25)">R1</text>
+  <text x="0" y="30" text-anchor="middle" font-size="10" fill="gray" transform="rotate(45, 0, 30)">1k</text>
+</g>
+<g transform="translate(560, 80) rotate(-90)">
+  <g class="symbol"><rect x="-20" y="-8" width="40" height="16" fill="none" stroke="currentColor" stroke-width="2"/></g>
+  <text x="0" y="-25" text-anchor="middle" font-size="12" transform="rotate(90, 0, -25)">R2</text>
+  <text x="0" y="30" text-anchor="middle" font-size="10" fill="gray" transform="rotate(90, 0, 30)">1k</text>
+</g>
+<g transform="translate(40, 560) rotate(0)">
+  <g class="symbol"><rect x="-20" y="-8" width="40" height="16" fill="none" stroke="currentColor" stroke-width="2"/></g>
+  <text x="0" y="-25" text-anchor="middle" font-size="12" >R3</text>
+  <text x="0" y="30" text-anchor="middle" font-size="10" fill="gray" >1k</text>
+</g>
+<g transform="translate(240, 40) rotate(135)">
+  <g class="symbol"><rect x="-20" y="-8" width="40" height="16" fill="none" stroke="currentColor" stroke-width="2"/></g>
+  <text x="0" y="-25" text-anchor="middle" font-size="12" transform="rotate(-135, 0, -25)">R4</text>
+  <text x="0" y="30" text-anchor="middle" font-size="10" fill="gray" transform="rotate(-135, 0, 30)">1k</text>
+</g>
+<g transform="translate(360, 280) rotate(180)">
+  <g class="symbol"><rect x="-20" y="-8" width="40" height="16" fill="none" stroke="currentColor" stroke-width="2"/></g>
+  <text x="0" y="-25" text-anchor="middle" font-size="12" transform="rotate(-180, 0, -25)">Rg</text>
+  <text x="0" y="30" text-anchor="middle" font-size="10" fill="gray" transform="rotate(-180, 0, 30)">50R</text>
+</g>
+<g transform="translate(720, 400) rotate(0.0)">
+  <g class="symbol">
+        <line x1="-15" y1="0" x2="15" y2="0" stroke="currentColor" stroke-width="2"/>
+        <line x1="0" y1="-10" x2="0" y2="0" stroke="currentColor" stroke-width="2"/>
+    </g>
+  <text x="0" y="25" text-anchor="middle" font-size="12" >GND</text>
+  <text x="0" y="80" text-anchor="middle" font-size="10" fill="gray" ></text>
+</g>
+<line x1="80.0" y1="340.0" x2="385.85786437626905" y2="574.142135623731" stroke="blue" stroke-width="1" />
+<line x1="385.85786437626905" y1="574.142135623731" x2="20" y2="560" stroke="blue" stroke-width="1" />
+<line x1="414.14213562373095" y1="545.857864376269" x2="560.0" y2="100.0" stroke="blue" stroke-width="1" />
+<line x1="560.0" y1="100.0" x2="380.0" y2="280.0" stroke="blue" stroke-width="1" />
+<line x1="225.85786437626905" y1="54.14213562373095" x2="560.0" y2="60.0" stroke="blue" stroke-width="1" />
+<line x1="560.0" y1="60.0" x2="80.0" y2="300.0" stroke="blue" stroke-width="1" />
+<line x1="80.0" y1="300.0" x2="720" y2="390" stroke="blue" stroke-width="1" />
+<line x1="340.0" y1="280.0" x2="60" y2="560" stroke="blue" stroke-width="1" />
+<line x1="60" y1="560" x2="254.14213562373095" y2="25.85786437626905" stroke="blue" stroke-width="1" />
+</svg>

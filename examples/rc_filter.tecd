@@ -1,0 +1,12 @@
+@circuit
+@options
+  standard = IEC60617
+  layout = horizontal
+@end
+
+VDC Vin (dc=12V)
+RES R1 (value=1k)
+CAP C1 (value=470nF)
+
+Vin -> R1 -> C1 -> GND
+@end

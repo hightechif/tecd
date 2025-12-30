@@ -1,0 +1,12 @@
+@circuit
+@options
+  layout = vertical
+@end
+
+VDC Vin (dc=5V)
+RES R1 (value=10k)
+RES R2 (value=2.2k)
+
+Vin -> R1 -> Vout
+Vout -> R2 -> GND
+@end

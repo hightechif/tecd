@@ -1,0 +1,12 @@
+@circuit
+@options
+  layout = horizontal
+@end
+
+VAC Source (ac=12V)
+RES R1 (value=100R)
+IND L1 (value=10mH)
+CAP C1 (value=10uF)
+
+Source -> R1 -> L1 -> C1 -> GND
+@end
