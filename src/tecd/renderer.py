@@ -112,19 +112,32 @@ class SVGRenderer:
                          lines.append(f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="blue" stroke-width="1" />')
                     else:
                         d = ""
-                        if style == 'HV': # Horizontal Layout (Horizontal -> Vertical -> Horizontal)
-                            # Use Z-routing to stay in channels
+                    if style == 'HV': # Horizontal Layout (Horizontal -> Vertical -> Horizontal)
+                        # Check for GND connection (Special Case)
+                        is_p1_gnd = self.comp_map.get(net.points[i].component.name) and self.comp_map[net.points[i].component.name].component.type_name == 'GND'
+                        is_p2_gnd = self.comp_map.get(net.points[i+1].component.name) and self.comp_map[net.points[i+1].component.name].component.type_name == 'GND'
+                        
+                        if is_p2_gnd: 
+                            # Terminating at GND: Horizontal then Vertical (Elbow to bottom)
+                            # M x1 y1 L x2 y1 L x2 y2
+                            d = f"M {x1} {y1} L {x2} {y1} L {x2} {y2}"
+                        elif is_p1_gnd:
+                            # Starting from GND: Vertical then Horizontal (Elbow from bottom)
+                            # M x1 y1 L x1 y2 L x2 y2
+                            d = f"M {x1} {y1} L {x1} {y2} L {x2} {y2}"
+                        else:
+                            # Standard Z-routing
                             mid_x = (x1 + x2) / 2
                             d = f"M {x1} {y1} L {mid_x} {y1} L {mid_x} {y2} L {x2} {y2}"
-                        elif style == 'VH': # Vertical Layout (Vertical -> Horizontal -> Vertical)
-                            # Use Z-routing
-                            mid_y = (y1 + y2) / 2
-                            d = f"M {x1} {y1} L {x1} {mid_y} L {x2} {mid_y} L {x2} {y2}"
+                    elif style == 'VH': # Vertical Layout (Vertical -> Horizontal -> Vertical)
+                        # Use Z-routing
+                        mid_y = (y1 + y2) / 2
+                        d = f"M {x1} {y1} L {x1} {mid_y} L {x2} {mid_y} L {x2} {y2}"
                         
-                        if d:
-                            lines.append(f'<path d="{d}" stroke="blue" stroke-width="1" fill="none"/>')
-                        else: # Fallback
-                             lines.append(f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="blue" stroke-width="1" />')
+                    if d:
+                        lines.append(f'<path d="{d}" stroke="blue" stroke-width="1" fill="none"/>')
+                    else: # Fallback
+                        lines.append(f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="blue" stroke-width="1" />')
 
         lines.append('</svg>')
         return "\n".join(lines)
